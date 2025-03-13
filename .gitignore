@@ -134,3 +134,17 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# truffle-abigen
+truffle-abigen/build/
+truffle-abigen/node_modules/
+truffle-abigen/abigenBindings/abi
+truffle-abigen/abigenBindings/bin
+truffle-abigen/*-input.json
+truffle-abigen/*.go
+truffle-abigen/*.exe
+
+# remixd
+remixd/contracts/.deps
+remixd/contracts/artifacts
+remixd/contracts/*.sol

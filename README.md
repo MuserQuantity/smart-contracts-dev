@@ -18,3 +18,10 @@ sh start.sh
 http://localhost:65520
 ```
 4. Put your smart contracts in the `remixd/contracts` folder
+
+### Get your smart contracts abi and bin with Truffle
+1. Build the docker image
+```bash
+docker build -t mytruffle:latest .
+```
+
