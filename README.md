@@ -25,3 +25,21 @@ http://localhost:65520
 docker build -t mytruffle:latest .
 ```
 
+2. Compile the smart contracts
+```bash
+cd truffle-abigen
+python compile.py
+```
+
+3. Generate the smart contracts abi and bin
+```bash
+python output.py <contract_name>
+```
+
+4. Generate the smart contracts go file
+```bash
+# this command will get from the previous step
+abigen --abi abigenBindings/abi/<contract_name>.abi --pkg contracts --type <contract_name> --bin abigenBindings/bin/<contract_name>.bin --out <contract_name>.go
+```
+
+
